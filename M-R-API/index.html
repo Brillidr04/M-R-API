@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/rm.webp" type="image/x-icon">
+  <title>Rick and Morty</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</head>
+
+<body>
+
+  <section class="parallax" style="background-image: url('./img/ii.avif');">
+    <div class="container">
+      <h1 class="title">The Rick and Morty API</h1>
+      <p class="text-dark">Los personajes de Rick & Morty llamadas por medio de Async/Await.
+      </p>
+      <p class="text-dark">La fórmula general en Rick y Morty consiste en la yuxtaposición de dos escenarios que confluyen. 
+        Por un lado se muestran las aventuras que vive un abuelo extremadamente egoísta y alcohólico por lo vasto y desconocido del espacio intergaláctico o interdimensional, el cual arrastra a su nieto para que viaje con él.</p>
+      <div class="social-networks">
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100006938059203"><i class="fab fa-facebook-f"></i></a>
+        <a target="_blank" href="https://www.instagram.com/viiviianarb04/"><i class="fab fa-instagram"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+        <a target="_blank" href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="cards-content" class="container"></section>
+
+  <script src="./js/utils/fetchData.js"></script>
+  <script src="./js/utils/cardGenerator.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

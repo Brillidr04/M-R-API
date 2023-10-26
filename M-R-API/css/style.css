@@ -1,0 +1,172 @@
+html,
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 13px;
+  background-color: #1f1f1f;
+  background-image: url(https://e1.pxfuel.com/desktop-wallpaper/876/981/desktop-wallpaper-space-tumblr-planet.jpg);
+}
+
+body::-webkit-scrollbar {
+  background-color: #101010;
+  width: 100%;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #090909;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1100px;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.social-networks {
+  padding: 10px 0;
+  font-size: 1.6em;
+}
+
+.social-networks > a {
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: #090808;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.social-networks > a + a {
+  margin-left: 5px;
+}
+
+.parallax {
+  font-size: 1.2rem;
+  background-position: 50% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+  color: #fff;
+}
+
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #030303;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-body {
+  position: relative;
+  padding: 10px;
+  color: #faf9f9;
+}
+
+.card-body > h1, h2,
+h3, h4, h5, p {
+  margin: 5px 0;
+}
+
+.alive,
+.dead,
+.unknown,
+.badge-top {
+  position: absolute;
+  padding: 0 10px;
+  border-radius: 5px;
+  transition: .2s;
+  font-size: 700;
+}
+
+.alive:hover,
+.dead:hover,
+.unknown:hover,
+.badge-top:hover {
+  transition: .2s;
+  cursor: pointer;
+  color: #1f1f1f;
+}
+
+.badge-top {
+  top: 10px;
+  left: 10px;
+  color: #060606;
+  border: 1px solid #0b0b0b;
+  font-family:'Times New Roman', Times, serif
+  max-width: 65px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.badge-top:hover {
+  max-width: 100%;
+  background-color: #6847d4;
+  color: #fff;
+}
+
+.alive {
+  border: 1px solid #81ff28;
+  bottom: 10px;
+  right: 5px;
+  color: #81ff28;
+}
+
+.alive:hover {
+  background-color: #81ff28;
+  color: #1f1f1f;
+}
+
+.dead {
+  border: 1px solid #f8261f;
+  bottom: 10px;
+  right: 5px;
+  color: #131313;
+}
+
+.dead:hover {
+  background-color: #f8261f;
+  color: #1f1f1f;
+}
+
+.unknown {
+  border: 1px solid #28a5ff;
+  bottom: 10px;
+  right: 5px;
+  color: #28a5ff;
+}
+
+.unknown:hover {
+  background-color: #28a5ff;
+}
+
+
+
+#cards-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 10px;
+  padding-top: 30px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .container {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
